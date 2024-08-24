@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<h2>Employee Summary</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Total Employees</th>
+            <th>Average Salary</th>
+            <th>Total Salary</th>
+            <th>Minimum Salary</th>
+            <th>Maximum Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@ViewBag.Min</td>
+            <td>@ViewBag.Max</td>
+            <td>@ViewBag.Total</td>
+            <td>@ViewBag.Avg</td>
+            <td>@ViewBag.Count</td>
+        </tr>
+    </tbody>
+</table>
